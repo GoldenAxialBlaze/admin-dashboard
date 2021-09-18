@@ -236,7 +236,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   border-radius: 10px;
 }
 
-.mybtn.btn_active {
+.mybtn.btn_active, .mybtn:hover {
   background-color: var(--primary-color);
   color: white;
 }
