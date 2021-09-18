@@ -1,0 +1,273 @@
+:root {
+  --primary-color: #8b1181;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+#wrapper {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -5rem;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .group {
+  width: 5rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+  margin-left: 0;
+}
+
+.rotate {
+  transform: rotateZ(270deg);
+  cursor: pointer;
+}
+
+.rotate1 {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.size {
+  font-size: 12px;
+  border: 1px solid #b9b9b9;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.my-color {
+  color: #b9b9b9;
+}
+
+.subtitle {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.active > span {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.active > i {
+  padding: 5px;
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.active > span + p,
+.active > i + p {
+  color: var(--primary-color);
+}
+
+.menus {
+  width: 64px;
+  height: 64px;
+  padding: 10px 10px 0px 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.menus1 {
+  box-sizing: border-box;
+  color: grey;
+}
+
+.menus2 {
+  width: 64px;
+  box-sizing: border-box;
+  color: grey;
+}
+
+.menus:not(.active):hover {
+  color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+  border-radius: 10px;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.modify {
+  background: grey;
+  padding: 5px;
+  border-radius: 50%;
+  color: white;
+  font-size: 12px;
+}
+
+.menus1 > i,
+.menus2 > i {
+  position: relative;
+}
+
+.small-circle {
+  background: rgb(25, 255, 25);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.small-circle2 {
+  background: rgb(183, 45, 201);
+  width: 7px;
+  height: 7px;
+  border: 1px solid rgb(231, 229, 229);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+}
+
+#page-content-wrapper {
+  background: rgb(245, 245, 245);
+}
+
+.my-border-right {
+  border-left: 1px solid rgb(230, 230, 230);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.style {
+  border-radius: 10px;
+  min-height: 70vh;
+}
+
+.event-title {
+  color: #ddd;
+}
+
+.tab-link {
+  color: grey !important;
+  width: 100% !important;
+  font-weight: 600;
+}
+
+.adjust {
+  font-size: 16px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: rgb(247, 247, 247);
+  color: var(--primary-color) !important;
+  border-left: 3px solid var(--primary-color);
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000 !important;
+  background-color: white !important;
+}
+
+.accordion-button:focus {
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.accordion-button::after {
+  color: var(--primary-color) !important;
+}
+
+.myheader {
+  color: var(--primary-color);
+}
+
+.form-check-input:checked {
+  background-color: #0aeb95bf;
+  border-color: #0aeb95bf;
+  outline: none;
+}
+
+.form-check-input:focus {
+  box-shadow: none !important;
+}
+
+.sub-div > h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(73, 73, 73);
+}
+.sub-div > p {
+  font-size: 12px;
+  color: grey;
+}
+
+.mybtn {
+  border: none;
+  outline: none;
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+.mybtn.btn_active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.myswitch {
+  margin-left: 70%;
+}
+
+.main-content {
+  position: relative;
+}
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.2rem;
+  color: grey;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+    margin-left: -5rem;
+  }
+}

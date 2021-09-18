@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<title>Simple Sidebar - Start Bootstrap Template</title>
+	<!-- Favicon-->
+	<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+	<!-- Google Material Icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Bootstrap CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<!-- Custom CSS -->
+	<link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="d-flex" id="wrapper">
+		<!-- Sidebar-->
+		<div class="bg-white shadow-sm" id="sidebar-wrapper">
+			<!-- <div class="sidebar-heading border-bottom bg-light">Start Bootstrap</div> -->
+			<div class="group d-flex justify-content-center align-items-center flex-column">
+				<div class="logo mt-2">
+					<img src="./img/logo.PNG" alt="logo">
+				</div>
+				<div class="menus mt-3 text-center active" id="event">
+					<span class="material-icons">equalizer</span>
+					<p class="subtitle">Event</p>
+				</div>
+				<div class="menus mt-2 text-center">
+					<i class="fas fa-users"></i>
+					<p class="subtitle">Teams</p>
+				</div>
+				<div class="menus mt-2 text-center">
+					<span class="material-icons">insights</span>
+					<p class="subtitle">Analytics</p>
+				</div>
+				<div class="menus mt-2 text-center">
+					<i class="fas fa-envelope-open-text"></i>
+					<p class="subtitle">Results</p>
+				</div>
+			</div>
+		</div>
+		<!-- Page content wrapper-->
+		<div id="page-content-wrapper">
+			<!-- Top navigation-->
+			<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+				<div class="container-fluid">
+					<!-- <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button> -->
+					<span class="rotate1 d-flex justify-content-center align-items-center">
+						<span class="material-icons rotate" id="sidebarToggle">signal_cellular_alt</span>
+					</span>
+					<span class="heading">Admin Dashboard</span>
+
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+							<div class="border p-1 d-flex justify-content-center align-items-center my-color">
+								<span>Preview On:</span>
+								<span class="material-icons size mx-1"> tablet_android </span>
+								<span class="material-icons size"> laptop </span>
+							</div>
+
+							<div class="d-flex align-items-center justify-content-center d-md-none">
+								<div class="avatar ms-2 mt-2 mt-md-0">
+									<img src="./img/avatar.jpg" alt="avatar">
+									<div class="small-circle2"></div>
+								</div>
+								<div class="menus1 text-center ms-2">
+									<i class="fas fa-bell modify">
+										<div class="small-circle"></div>
+									</i>
+								</div>
+								<div class="menus1 text-center ms-2">
+									<i class="fas fa-comments">
+										<div class="small-circle"></div>
+									</i>
+								</div>
+								<div class="menus1 text-center mx-2">
+									<i class="fas fa-cog modify"></i>
+								</div>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- Page content-->
+			<div class="container page-content mt-4" id="page-content">
+				<div class="row bg-white style m-0 main-content">
+					<div class="col-md-2 m-0 p-0">
+						<div class="px-3 py-2 border-bottom m-0">
+							<p class="mt-2 event-title">Event Settings</p>
+						</div>
+						<div class="d-flex w-100">
+							<div class="nav flex-column align-items-start w-100" id="v-pills-tab" role="tablist"
+								aria-orientation="vertical">
+
+								<div class="nav-link tab-link" id="general-tab" data-bs-toggle="pill" data-bs-target="#general"
+									type="button" role="tab" aria-controls="general" aria-selected="true">General</div>
+
+								<div class="nav-link tab-link" id="privacy-tab" data-bs-toggle="pill" data-bs-target="#privacy"
+									type="button" role="tab" aria-controls="privacy" aria-selected="false">Privacy</div>
+
+								<div class="nav-link tab-link active" id="features-tab" data-bs-toggle="pill" data-bs-target="#features"
+									type="button" role="tab" aria-controls="features" aria-selected="false">Features</div>
+
+								<div class="nav-link tab-link" id="customization-tab" data-bs-toggle="pill"
+									data-bs-target="#customization" type="button" role="tab" aria-controls="customization"
+									aria-selected="false">Customization</div>
+
+								<div class="nav-link tab-link" id="integration-tab" data-bs-toggle="pill" data-bs-target="#integration"
+									type="button" role="tab" aria-controls="integration" aria-selected="false">Integration</div>
+
+								<div class="nav-link tab-link d-flex align-items-center" id="session-setting-tab" data-bs-toggle="pill"
+									data-bs-target="#session-setting" type="button" role="tab" aria-controls="session-setting"
+									aria-selected="false">Session Settings
+									<span class="material-icons ms-2 adjust">lock</span>
+								</div>
+
+								<div class="nav-link tab-link " id="my-plans-tab" data-bs-toggle="pill" data-bs-target="#my-plans"
+									type="button" role="tab" aria-controls="my-plans" aria-selected="false">My Plans
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-10 my-border-right">
+						<div class="tab-content" id="v-pills-tabContent">
+
+							<div class="tab-pane fade" id="general" role="tabpanel" aria-labelledby="general-tab">
+								GENERAL
+							</div>
+
+							<div class="tab-pane fade" id="privacy" role="tabpanel" aria-labelledby="privacy-tab">
+								Privacy
+							</div>
+
+							<div class="tab-pane fade show active" id="features" role="tabpanel" aria-labelledby="features-tab">
+
+								<div class="container">
+									<div class="row">
+										<div class="col-md-10 m-auto">
+											<i class="far fa-times-circle closebtn" id="closebtn"></i>
+											<div class="accordion accordion-flush mt-5" id="accordionPanelsStayOpenExample">
+												<div class="accordion-item">
+													<h2 class="accordion-header bg-white" id="features-accordion">
+														<button class="accordion-button" type="button" data-bs-toggle="collapse"
+															data-bs-target="#features-collapse" aria-expanded="true"
+															aria-controls="features-collapse">
+															<div class="myheader d-flex justify-content-center align-items-center">
+																<span class="material-icons me-2">forum</span>
+																<span class="fw-bold">Audience Q&A</span>
+															</div>
+															<div class="form-check form-switch myswitch">
+																<input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+															</div>
+														</button>
+													</h2>
+													<div id="features-collapse" class="accordion-collapse collapse show"
+														aria-labelledby="features-accordion">
+														<div class="accordion-body">
+															<div class="container">
+
+																<div class="main-div d-flex justify-content-between">
+																	<div class="sub-div">
+																		<h4>Moderation</h4>
+																		<p>Easily review all questions before they go live.</p>
+																	</div>
+																	<div class="form-check form-switch">
+																		<input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+																	</div>
+																</div>
+
+																<div class="main-div d-flex justify-content-between">
+																	<div class="sub-div">
+																		<h4>Labels</h4>
+																		<p>Categorize and filter questions.</p>
+																	</div>
+																	<div class="form-check form-switch">
+																		<input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+																	</div>
+																</div>
+
+																<div class="main-div d-flex justify-content-between">
+																	<div class="sub-div">
+																		<h4>Downvotes</h4>
+																		<p>Enable downvoting of questions.</p>
+																	</div>
+																	<div class="form-check form-switch">
+																		<input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+																	</div>
+																</div>
+
+																<div class="main-div d-flex justify-content-between">
+																	<div class="sub-div">
+																		<h4>Replies</h4>
+																		<p>Allow perticipants to reply to or comment on questions.</p>
+																	</div>
+																	<div class="form-check form-switch">
+																		<input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+																	</div>
+																</div>
+
+																<div class="main-div d-flex justify-content-between">
+																	<div class="sub-div">
+																		<h4>Anonymous questions</h4>
+																		<p>Let ypur perticipants send anonymous questions.</p>
+																	</div>
+																	<div class="form-check form-switch">
+																		<input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+																	</div>
+																</div>
+
+																<div class="main-div d-flex justify-content-between">
+																	<div class="sub-div">
+																		<h4>Medium question length</h4>
+																		<p>Show number of votes instead of percentage.</p>
+																		<button class="mybtn">160</button>
+																		<button class="mybtn mx-2">240</button>
+																		<button class="mybtn btn_active">300</button>
+																	</div>
+																	<div class="form-check form-switch">
+																		<input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+																	</div>
+																</div>
+
+																<div class="main-div d-flex justify-content-between mt-3">
+																	<div class="sub-div">
+																		<h4>Close questions</h4>
+																		<p>Prevent the participants from sending new questions to your event.</p>
+																	</div>
+																	<div class="form-check form-switch">
+																		<input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="tab-pane fade" id="customization" role="tabpanel" aria-labelledby="customization-tab">
+								Customization
+							</div>
+
+							<div class="tab-pane fade" id="integration" role="tabpanel" aria-labelledby="integration-tab">
+								Integration
+							</div>
+
+							<div class="tab-pane fade" id="session-setting" role=" tabpanel" aria-labelledby="session-setting">
+								Session Setting
+							</div>
+
+							<div class="tab-pane fade" id="my-plans" role=" tabpanel" aria-labelledby="my-plans">
+								My plans
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Second Sidebar-->
+		<div class="bg-white shadow-sm" id="second-sidebar">
+			<div class="group d-flex justify-content-center align-items-center flex-column">
+				<div class="avatar mt-2">
+					<img src="./img/avatar.jpg" alt="avatar">
+					<div class="small-circle2"></div>
+				</div>
+				<div class="menus2 mt-3 text-center">
+					<i class="fas fa-bell modify">
+						<div class="small-circle"></div>
+					</i>
+				</div>
+				<div class="menus2 mt-3 text-center">
+					<i class="fas fa-comments">
+						<div class="small-circle"></div>
+					</i>
+				</div>
+				<div class="menus2 mt-3 text-center">
+					<i class="fas fa-cog modify"></i>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- JQery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<!-- Bootstrap core JS-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+		crossorigin="anonymous"></script>
+	<!-- Core theme JS-->
+	<script src="js/scripts.js"></script>
+</body>
+
+</html>
