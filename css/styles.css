@@ -64,19 +64,19 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   font-weight: 500;
 }
 
-.active > span {
+.active>span {
   background: var(--primary-color);
   color: #fff;
 }
 
-.active > i {
+.active>i {
   padding: 5px;
   background: var(--primary-color);
   color: #fff;
 }
 
-.active > span + p,
-.active > i + p {
+.active>span+p,
+.active>i+p {
   color: var(--primary-color);
 }
 
@@ -127,8 +127,8 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   font-size: 12px;
 }
 
-.menus1 > i,
-.menus2 > i {
+.menus1>i,
+.menus2>i {
   position: relative;
 }
 
@@ -217,12 +217,13 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   box-shadow: none !important;
 }
 
-.sub-div > h4 {
+.sub-div>h4 {
   font-size: 16px;
   font-weight: 700;
   color: rgb(73, 73, 73);
 }
-.sub-div > p {
+
+.sub-div>p {
   font-size: 12px;
   color: grey;
 }
@@ -236,7 +237,8 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   border-radius: 10px;
 }
 
-.mybtn.btn_active, .mybtn:hover {
+.mybtn.btn_active,
+.mybtn:hover {
   background-color: var(--primary-color);
   color: white;
 }
@@ -248,6 +250,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 .main-content {
   position: relative;
 }
+
 .closebtn {
   position: absolute;
   top: 10px;
